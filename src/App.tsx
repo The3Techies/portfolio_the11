@@ -1,9 +1,17 @@
-import Hero from "./components/Hero";
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import MySkills from "./components/MySkills";
+import Footer from "./components/footer";
 
 function App() {
-  return <div >
-   <Hero/>
-  </div>;
+  return (
+    <div className="w-screen">
+      <Header />
+      <AboutMe />
+      <MySkills />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
