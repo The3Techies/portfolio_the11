@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import MySkills from "./components/MySkills";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
