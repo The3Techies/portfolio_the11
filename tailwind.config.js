@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'triangle': `url('./src/assets/ProjectsImg/triangle.svg')`,
+        'footer-contactme': `url('./src/assets/ContactMeImg/bg-footer.svg')`,
+      },
+    },
   },
   plugins: [],
 }

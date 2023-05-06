@@ -83,45 +83,45 @@ function MySkills() {
 
   const Programs2DDeisgns = [
     {
-      logo: <SiAdobephotoshop className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <SiAdobephotoshop className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "Photoshop",
-      progressValue: "95",
+      progressValue: 95,
     },
     {
       logo: (
-        <SiAdobeillustrator className="w-[50px] h-[50px] text-[#ffffff] " />
+        <SiAdobeillustrator className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />
       ),
       name: "Illustrator",
-      progressValue: "95",
+      progressValue: 95,
     },
     {
-      logo: <SiAdobeindesign className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <SiAdobeindesign className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "InDesig",
-      progressValue: "98",
+      progressValue: 98,
     },
     {
-      logo: <SiAdobexd className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <SiAdobexd className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "Xd",
-      progressValue: "99",
+      progressValue: 99,
     },
     {
       logo: (
-        <SiAdobepremierepro className="w-[50px] h-[50px] text-[#ffffff] " />
+        <SiAdobepremierepro className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />
       ),
       name: "Premiere",
-      progressValue: "60",
+      progressValue: 60,
     },
     {
-      logo: <SiAdobelightroom className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <SiAdobelightroom className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "Lightroom",
-      progressValue: "90",
+      progressValue: 90,
     },
     {
       logo: (
-        <SiAdobeaftereffects className="w-[50px] h-[50px] text-[#ffffff] " />
+        <SiAdobeaftereffects className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />
       ),
       name: "After Effect",
-      progressValue: "40",
+      progressValue: 40,
     },
   ];
 
@@ -131,9 +131,9 @@ function MySkills() {
         <div key={i} className="mt-4 flex flex-row-reverse text-right mb-6">
           <div>{logo}</div>
           <div className="mr-2">
-            <p className="text-[#ffffff] text-lg mt-[-6px]">Adobe {name}</p>
-            <div className="flex">
-              <div className="w-36 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
+            <p className="text-[#ffffff] md:text-lg text-xs mt-[-6px]">Adobe {name}</p>
+            <div className="md:flex  ">
+              <div className="md:w-36 w-24 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
                 <div
                   className={
                     "h-1.5 rounded-full bg-blue-600 " + `w-[${progressValue}%]`
@@ -150,24 +150,24 @@ function MySkills() {
 
   const ProgramsOfficeSoftware = [
     {
-      logo: <RiFileExcel2Fill className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <RiFileExcel2Fill className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "Excel",
-      progressValue: "95",
+      progressValue: 95,
     },
     {
-      logo: <RiFileWord2Fill className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <RiFileWord2Fill className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "Word",
-      progressValue: "95",
+      progressValue: 95,
     },
     {
-      logo: <FaFilePowerpoint className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <FaFilePowerpoint className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "PowerPoint",
-      progressValue: "98",
+      progressValue: 98,
     },
     {
-      logo: <SiPowerbi className="w-[50px] h-[50px] text-[#ffffff] " />,
+      logo: <SiPowerbi className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
       name: "Power BI",
-      progressValue: "99",
+      progressValue: 99,
     },
   ];
 
@@ -177,16 +177,16 @@ function MySkills() {
         <div key={i} className="mt-4 flex text-left mb-6">
           <div>{logo}</div>
           <div className="ml-2">
-            <p className="text-[#ffffff] text-lg mt-[-6px]">Ms {name}</p>
-            <div className="flex">
-              <div className="w-36 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
+            <p className="text-[#ffffff] md:text-lg text-xs mt-[-6px]">Ms {name}</p>
+            <div className="md:flex">
+              <div className="md:w-36 w-24 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
                 <div
                   className={
                     "h-1.5 rounded-full bg-blue-600 " + `w-[${progressValue}%]`
                   }
                 ></div>
               </div>
-              <p className="text-[#ffffff] text-xs ml-2 ">{progressValue}%</p>
+              <p className="text-[#ffffff] text-xs ml-2 ">{progressValue}</p>
             </div>
           </div>
         </div>
@@ -195,14 +195,14 @@ function MySkills() {
 
     const Programs3DDeisgns = [
       {
-        logo: <SiPowerbi className="w-[50px] h-[50px] text-[#ffffff] " />,
+        logo: <SiPowerbi className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
         name: "Belnder",
-        progressValue: "60",
+        progressValue: 60,
       }, 
       {
-        logo: <SiPowerbi className="w-[50px] h-[50px] text-[#ffffff] " />,
+        logo: <SiPowerbi className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />,
         name: "Cinema 4d",
-        progressValue: "40",
+        progressValue: 40,
       },
     ];
 
@@ -212,9 +212,9 @@ function MySkills() {
         <div key={i} className="mt-4 flex text-left mb-6">
           <div>{logo}</div>
           <div className="ml-2">
-            <p className="text-[#ffffff] text-lg mt-[-6px]">{name}</p>
-            <div className="flex">
-              <div className="w-36 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
+            <p className="text-[#ffffff] md:text-lg text-xs mt-[-6px]">{name}</p>
+            <div className="md:flex">
+              <div className="md:w-36 w-24 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
                 <div
                   className={
                     "h-1.5 rounded-full bg-blue-600 " + `w-[${progressValue}%]`
@@ -258,9 +258,7 @@ function MySkills() {
       );
     });
 
-
     
-
   return (
     <div className="w-screen bg-[#1a1918] flex flex-col items-center font-sans pb-10">
       <h4 className="text-[#a34f29] text-3xl text-center">My Skills</h4>
@@ -288,21 +286,21 @@ function MySkills() {
           {CoursesHtml}
         </div>
 
-        <div className="bg-[#a34f29] w-fit h-fit py-1 px-3 text-[#FFFFFF] col-start-1 col-span-3 justify-self-center">
+        <div className="bg-[#a34f29] w-fit h-fit py-1 px-3 text-[#FFFFFF] col-start-1 col-span-3 justify-self-center mt-4 md:mt-0">
           <h3 className="text-3xl">Programs</h3>
         </div>
 
         <div className="col-start-1 justify-self-end text-right mt-6 ">
-          <h4 className="text-[#a34f29] text-3xl">2D Deisgns </h4>
+          <h4 className="text-[#a34f29] md:text-3xl text-xl">2D Deisgns </h4>
           {Programs2DDeisgnssHtml}
         </div>
 
         <div className="w-[2px] min-h-[30vh] bg-[#393735] my-5 col-start-2 justify-self-center"></div>
 
         <div className="col-start-3 justify-self-start text-left  mt-6 ">
-          <h4 className="text-[#a34f29] text-3xl">Office Software</h4>
+          <h4 className="text-[#a34f29] md:text-3xl text-xl">Office Software</h4>
           {ProgramsOfficeSoftwareHtml}
-          <h4 className="text-[#a34f29] text-3xl">3D Deisgns</h4>
+          <h4 className="text-[#a34f29] md:text-3xl text-xl">3D Deisgns</h4>
           {Programs3DDeisgnsHtml}
         </div>
       </div>
@@ -311,7 +309,7 @@ function MySkills() {
         <h3 className="text-3xl">Personal Skills</h3>
       </div>
 
-      <div className="flex flex-wrap mt-4 gap-10 justify-center ">
+      <div className="flex flex-wrap mt-4 md:gap-10  gap-4 justify-center ">
         {PersonalSkillsHtml}
       </div>
       <h4 className="text-[#FFFFFF] text-3xl text-center mt-10">My portfolio PDF</h4>

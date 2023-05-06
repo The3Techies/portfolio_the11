@@ -43,7 +43,7 @@ function AboutMe() {
         <h2 className="text-[#A34F29] text-xl col-start-1 text-right ">
           My name:
         </h2>
-        <h2 className="text-[#FFFFFF] text-3xl font-bold col-start-2 row-start-5 ">
+        <h2 className="text-[#FFFFFF] md:text-3xl text-2xl font-bold col-start-2 row-start-5 ">
           DheYazan Al-Shaibani
         </h2>
       </div>
@@ -57,11 +57,11 @@ function AboutMe() {
 
         <div className="w-[2px] h-[10vh] bg-[#a34f29] my-5 col-start-2 justify-self-center"></div>
         <div className="w-[34px] h-[34px] bg-[#a34f29] col-start-2 m-auto rounded-full "></div>
-        <div className="bg-[#a34f29] w-fit h-fit py-1 px-3 text-[#FFFFFF]">
-          <h3 className="text-3xl">About me</h3>
+        <div className="bg-[#a34f29] w-fit h-fit p-1 ml-4 text-[#FFFFFF]">
+          <h3 className="md:text-3xl text-2xl ">About me</h3>
         </div>
 
-        <div className="col-start-1 justify-self-end my-5 text-right">
+        <div className="col-start-1 col-span-3 md:col-span-1 justify-self-center md:justify-self-end my-5 md:text-right text-center">
           <div>
             <h1 className="text-xl font-bold text-[#393735] mr-2">
               Contact Me
@@ -78,12 +78,12 @@ function AboutMe() {
             >
               <BsTelephonePlus className="w-[30px] h-[30px] ml-2" />
               <AiOutlineWhatsApp className="w-[30px] h-[30px] ml-2 " />
-              <p>00 966 053 53 40 810</p>
+              <p className="md:text-right text-center ">00 966 053 53 40 810</p>
             </div>
 
             <div className="flex flex-row-reverse mt-4 text-[#ffffff] hover:text-[#99d98c] hover:mr-4 ">
               <AiOutlineMail className="w-[60px] h-[60px] ml-4" />
-              <div className="text-right">
+              <div className="md:text-right text-center ">
                 <p>Dheyazena@gmail.com</p>
                 <p>Dheyazen@hotmail.com</p>
               </div>
@@ -94,7 +94,7 @@ function AboutMe() {
             </h1>
 
             <div
-              className="flex flex-row-reverse mt-4 text-[#ffffff] hover:text-[#99d98c] hover:mr-4 cursor-pointer "
+              className="flex flex-row-reverse mt-4 text-[#ffffff] hover:text-[#99d98c] hover:mr-4 cursor-pointer justify-center md:justify-start"
               onClick={() => {
                 window.open(
                   "https://www.facebook.com/Dheyazen?mibextid=ZbWKwL",
@@ -103,13 +103,13 @@ function AboutMe() {
               }}
             >
               <AiOutlineFacebook className="w-[30px] h-[30px] ml-2" />
-              <div className="text-right">
+              <div className="md:text-right">
                 <p>Facebook</p>
               </div>
             </div>
 
             <div
-              className="flex flex-row-reverse mt-4 text-[#ffffff] hover:text-[#99d98c] hover:mr-4 cursor-pointer "
+              className="flex flex-row-reverse mt-4 text-[#ffffff] hover:text-[#99d98c] hover:mr-4 cursor-pointer justify-center md:justify-start "
               onClick={() => {
                 window.open(
                   "https://www.facebook.com/Dheyazen?mibextid=ZbWKwL",
@@ -124,8 +124,8 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="w-[2px] min-h-[50vh] bg-[#393735] my-5 col-start-2  justify-self-center"></div>
-        <div className="col-start-3 self-center text-[#FFFFFF]">
+        <div className="w-[2px] min-h-[50vh] bg-[#393735] my-5 col-start-2  justify-self-center hidden md:block"></div>
+        <div className="md:col-start-3 md:col-span-1 col-start-1 col-span-3 self-center text-center md:text-left text-[#FFFFFF]">
           {aboutMeHtml}
         </div>
       </div>
