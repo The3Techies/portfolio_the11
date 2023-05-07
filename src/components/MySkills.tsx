@@ -319,7 +319,7 @@ function MySkills() {
           {CoursesHtml}
         </div>
 
-        <div className="bg-[#a34f29] w-fit h-fit py-1 px-3 text-[#FFFFFF] col-start-1 col-span-3 justify-self-center mt-4 md:mt-0">
+        <div className="bg-[#a34f29] w-fit h-fit py-1 px-3 text-[#FFFFFF] col-start-1 col-span-3 justify-self-center mt-4 ">
           <h3 className="text-3xl">Programs</h3>
         </div>
 
