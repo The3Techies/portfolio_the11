@@ -82,13 +82,15 @@ function MySkills() {
       ),
       name: "Photoshop",
       progressValue: 95,
+      w: "w-[95%]"
     },
     {
       logo: (
         <SiAdobeillustrator className="md:w-[50px] w-[40px] md:h-[50px] h-[40px] text-[#ffffff] " />
       ),
       name: "Illustrator",
-      progressValue: 95,
+      progressValue: 95, 
+      w: "w-[95%]"
     },
     {
       logo: (
@@ -96,6 +98,7 @@ function MySkills() {
       ),
       name: "InDesig",
       progressValue: 98,
+      w: "w-[98%]"
     },
     {
       logo: (
@@ -103,6 +106,7 @@ function MySkills() {
       ),
       name: "Xd",
       progressValue: 99,
+      w: "w-[99%]"
     },
     {
       logo: (
@@ -110,6 +114,7 @@ function MySkills() {
       ),
       name: "Premiere",
       progressValue: 60,
+      w: "w-[60%]"
     },
     {
       logo: (
@@ -117,6 +122,7 @@ function MySkills() {
       ),
       name: "Lightroom",
       progressValue: 90,
+      w: "w-[90%]"
     },
     {
       logo: (
@@ -124,11 +130,12 @@ function MySkills() {
       ),
       name: "After Effect",
       progressValue: 40,
+      w: "w-[40%]"
     },
   ];
 
   const Programs2DDeisgnssHtml: Array<JSX.Element> = Programs2DDeisgns.map(
-    ({ logo, name, progressValue }, i) => {
+    ({ logo, name, progressValue ,w }, i) => {
       return (
         <div key={i} className="mt-4 flex flex-row-reverse text-right mb-6">
           <div>{logo}</div>
@@ -140,7 +147,7 @@ function MySkills() {
               <div className="md:w-36 w-24 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
                 <div
                   className={
-                    "h-1.5 rounded-full bg-blue-600 " + `w-[${progressValue}%]`
+                    "h-1.5 rounded-full bg-blue-600 " + w
                   }
                 ></div>
               </div>
@@ -159,6 +166,7 @@ function MySkills() {
       ),
       name: "Excel",
       progressValue: 95,
+      w: "w-[95%]"
     },
     {
       logo: (
@@ -166,6 +174,7 @@ function MySkills() {
       ),
       name: "Word",
       progressValue: 95,
+      w: "w-[95%]"
     },
     {
       logo: (
@@ -180,11 +189,12 @@ function MySkills() {
       ),
       name: "Power BI",
       progressValue: 99,
+      w: "w-[99%]"
     },
   ];
 
   const ProgramsOfficeSoftwareHtml: Array<JSX.Element> =
-    ProgramsOfficeSoftware.map(({ logo, name, progressValue }, i) => {
+    ProgramsOfficeSoftware.map(({ logo, name, progressValue,w }, i) => {
       return (
         <div key={i} className="mt-4 flex text-left mb-6">
           <div>{logo}</div>
@@ -196,7 +206,7 @@ function MySkills() {
               <div className="md:w-36 w-24 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
                 <div
                   className={
-                    "h-1.5 rounded-full bg-blue-600 " + `w-[${progressValue}%]`
+                    "h-1.5 rounded-full bg-blue-600 " + w
                   }
                 ></div>
               </div>
@@ -214,6 +224,7 @@ function MySkills() {
       ),
       name: "Belnder",
       progressValue: 60,
+      w: "w-[60%]"
     },
     {
       logo: (
@@ -221,11 +232,12 @@ function MySkills() {
       ),
       name: "Cinema 4d",
       progressValue: 40,
+      w: "w-[40%]"
     },
   ];
 
   const Programs3DDeisgnsHtml: Array<JSX.Element> = Programs3DDeisgns.map(
-    ({ logo, name, progressValue }, i) => {
+    ({ logo, name, progressValue, w }, i) => {
       return (
         <div key={i} className="mt-4 flex text-left mb-6">
           <div>{logo}</div>
@@ -237,7 +249,7 @@ function MySkills() {
               <div className="md:w-36 w-24 bg-gray-200 rounded-full h-1.5  dark:bg-gray-700 mt-1.5">
                 <div
                   className={
-                    "h-1.5 rounded-full bg-blue-600 " + `w-[${progressValue}%]`
+                    "h-1.5 rounded-full bg-blue-600 " + w
                   }
                 ></div>
               </div>
@@ -282,7 +294,7 @@ function MySkills() {
 
   return (
     <div className="w-screen bg-[#1a1918] flex flex-col items-center font-sans pb-10">
-      <h4 className="text-[#a34f29] text-3xl text-center">My Skills</h4>
+      <h4 className="text-[#a34f29] text-3xl text-center ">My Skills</h4>
       <p className="text-center text-[gray] mb-4">
         During the path of my learning and experience I have managed to acquire
         the following skills that I master at different levels.
@@ -295,7 +307,7 @@ function MySkills() {
 
         <div className="w-[34px] h-[34px] bg-[#a34f29] col-start-2 m-auto rounded-full "></div>
 
-        <h3 className="text-3xl py-1 px-3 text-[#ffffff] col-start-3 justify-self-start">
+        <h3 className="text-3xl py-1 px-3 text-[#ffffff] col-start-3 justify-self-start ml-2 md:ml-0">
           Courses
         </h3>
 
