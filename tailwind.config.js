@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'triangle': `url('./src/assets/ProjectsImg/triangle.png')`,
+        'triangle': `url('./src/assets/ProjectsImg/hero.png')`,
         'footer-contactme': `url('./src/assets/ContactMeImg/bg-footer.svg')`,
       },
     },

@@ -2,7 +2,7 @@
 function Projects() {
     return (
       <div className="w-screen bg-[#FFFAD9] flex flex-col items-center font-sans">
-        <div className={`bg-triangle bg-repeat w-[100%] h-[50px] ` }></div>
+        <div className={`bg-triangle bg-repeat w-[100%] h-[1000px] ` }></div>
         <p>Projects</p>
        
       </div>
