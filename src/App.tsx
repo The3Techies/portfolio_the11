@@ -4,6 +4,7 @@ import MySkills from "./components/MySkills";
 import Projects from "./components/Projects/Projects";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import Abo from "./components/Abo";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Projects />
       <ContactMe />
       <Footer />
+      <Abo/>
     </div>
   );
 }

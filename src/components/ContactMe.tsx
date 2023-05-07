@@ -7,17 +7,18 @@ function ContactMe() {
   const [phone, SetPhone] = useState("");
   const [message, SetMessage] = useState("");
 
-
-  const send = ()=>{
-    
-  }
+  const send = () => {};
 
   return (
-    <div className="w-screen bg-[#A34F29] flex flex-col items-center font-sans">
+    <div className="w-screen bg-[#A34F29] flex flex-col items-center font-sans pb-16 ">
       <div className="bg-footer-contactme bg-no-repeat bg-cover w-[100%] h-[150px]"></div>
 
       <div className="my-10 flex w-full  select-none">
-        <img className="rounded-r-3xl w-1/2 hidden md:block" src={myPic} alt="my picture" />
+        <img
+          className="rounded-r-3xl w-1/2 hidden md:block "
+          src={myPic}
+          alt="my picture"
+        />
 
         <div className=" w-full md:w-1/2 ml-6 mt-2 ">
           <input
@@ -47,8 +48,13 @@ function ContactMe() {
             value={message}
             onChange={(e) => SetMessage(e.target.value)}
           ></textarea>
-          <button className="w-[90%] bg-[black] hover:bg-[#cd6130] text-[#ffffff] rounded-lg h-12 text-xl font-bold" onClick={send}>Send</button>
 
+          <button
+            className="w-[90%] bg-[black] hover:bg-[#cd6130] text-[#ffffff] rounded-lg h-12 text-xl font-bold z-50 relative "
+            onClick={send}
+          >
+            Send
+          </button>
         </div>
       </div>
     </div>
